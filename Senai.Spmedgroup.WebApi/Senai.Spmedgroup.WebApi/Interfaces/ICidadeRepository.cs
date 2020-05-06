@@ -14,5 +14,7 @@ namespace Senai.Spmedgroup.WebApi.Interfaces
         void Cadastrar(Cidade novaCidade);
 
         void Deletar(int id);
+
+        Cidade BuscarPorId(int id);
     }
 }

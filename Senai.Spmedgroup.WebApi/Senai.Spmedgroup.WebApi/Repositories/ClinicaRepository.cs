@@ -57,5 +57,17 @@ namespace Senai.Spmedgroup.WebApi.Repositories
                 .Include("IdEnderecoNavigation")
                 .ToList();
         }
+
+        public Clinica BuscarPorId(int id)
+        {
+            Clinica clinicaBuscada = ctx.Clinica.FirstOrDefault(c => c.IdClinica == id);
+
+            if(clinicaBuscada != null)
+            {
+                return clinicaBuscada;
+            }
+
+            return null;
+        }
     }
 }

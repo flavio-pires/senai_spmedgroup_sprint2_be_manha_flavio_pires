@@ -32,5 +32,17 @@ namespace Senai.Spmedgroup.WebApi.Repositories
         {
             return ctx.TipoUsuario.ToList();
         }
+
+        public TipoUsuario BuscarPorId()
+        {
+            TipoUsuario tipoUsuarioBuscado = ctx.TipoUsuario.FirstOrDefault(tu => tu.IdTipoUsuario == id);
+
+            if(tipoUsuarioBuscado != null)
+            {
+                return tipoUsuarioBuscado;
+            }
+
+            return null;
+        }
     }
 }

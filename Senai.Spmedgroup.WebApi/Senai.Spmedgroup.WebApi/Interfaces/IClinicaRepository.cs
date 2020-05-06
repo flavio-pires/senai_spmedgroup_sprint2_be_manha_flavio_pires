@@ -15,5 +15,7 @@ namespace Senai.Spmedgroup.WebApi.Interfaces
         void Atualizar(int id, Clinica clinicaAtualizada);
 
         void Deletar(int id);
+
+        Clinica BuscarPorId(int id);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Senai.Spmedgroup.WebApi.Contexts;
 using Senai.Spmedgroup.WebApi.Domains;
+using Senai.Spmedgroup.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Senai.Spmedgroup.WebApi.Repositories
 {
-    public class UsuarioRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
         SpmedicalgroupContext ctx = new SpmedicalgroupContext();
 

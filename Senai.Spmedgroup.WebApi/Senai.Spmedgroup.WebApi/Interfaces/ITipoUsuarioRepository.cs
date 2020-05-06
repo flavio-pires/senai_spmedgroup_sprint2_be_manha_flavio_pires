@@ -13,5 +13,7 @@ namespace Senai.Spmedgroup.WebApi.Interfaces
         void Cadastrar(TipoUsuario novoTipoUsuario);
 
         void Deletar(int id);
+
+        TipoUsuario BuscarPorId(int id);
     }
 }
